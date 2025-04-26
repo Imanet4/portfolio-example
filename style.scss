@@ -7,12 +7,12 @@ $font-size-xxlarge: 42px;
 
 $color-white: white;
 $color-black: black;
-$color-dark-gray: #333;
+$color-dark-gray: rgba(61,61,61,255);
 $color-darker-gray: #0d0d0d;
 $color-light-gray: #ccc;
 $color-medium-gray: rgb(149, 145, 136);
 $color-dark-medium-gray: rgb(64, 64, 64);
-$color-progress-bg: #444;
+$color-progress-bg: rgba(255,255,255,255);
 
 $padding-small: 20px;
 $padding-medium: 40px;
@@ -55,6 +55,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   filter: grayscale(80%);
+  height: 80vh;
   
   &:before {
     content: '';
@@ -111,11 +112,24 @@ body {
   padding: $padding-large 0;
   background-color: $color-dark-gray;
   color: $color-white;
+
+  .skills-title{
+    display: inline-block;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding-bottom: 20px; 
+    width: 200px;
+  }
   
   .progress {
-    height: 10px;
+    height: 35px;
     margin-bottom: $padding-small;
     background-color: $color-progress-bg;
+     .progress-text{
+      text-align: center;
+      padding: 10px;
+      width: 80px;
+      background-color: rgba(149,145,136,255);
+    }
   }
   
   .progress-bar {
