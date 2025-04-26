@@ -12,164 +12,222 @@
 
 <body>
     <!--Navigation bar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand logo" href="#">
                 <img src="/images/KR.jpg" alt="logo" width="90" height="70">
             </a>
-
-            <div class="navbar-nav d-flex justify-content-center justify-content-around">
-
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link active" aria-current="page" href="#">About</a>
-                <a class="nav-link active" aria-current="page" href="#">Projects</a>
-                <a class="nav-link active" aria-current="page" href="#">Contact</a>
-
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                </ul>
+                <div class="social-icons d-none d-lg-block">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
-
-            <div class="nav-media d-flex justify-content-between">
-                <div><i class="fa-brands fa-linkedin"></i></div>
-                <div><i class="fa-brands fa-facebook-f"></i></div>
-                <div><i class="fa-brands fa-twitter"></i></div>
-            </div>
-
-
-
-
         </div>
     </nav>
-    <!--Hero section-->
-    <section class="hero text-white py-5">
+
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="container">
-            <div class="row w-40">
-                <div class="d-flex flex-column">
-                    <h1 class="display-4">Katie Reed</h1>
-                    <h2 class="fs-4 mb-4">Web Developer & Designer</h2>
-                    <div>
-                        <button class="btn btn-outline-light">CONTACT ME</button>
+            <div class="row">
+                <div class="col-md-8">
+                    <h1>Katie Reed</h1>
+                    <p class="lead">Web Developer & Designer</p>
+                    <button class="btn btn-dark mt-4 contact-btn">CONTACT ME</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2 class="section-title">About me</h2>
+                </div>
+                <div class="col-lg-8">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonumy eirmod tempor invidunt
+                        ut
+                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores
+                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonumy eirmod tempor invidunt
+                        ut
+                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo.</p>
+                    <button class="btn btn-dark mt-4">Download Resume</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Skills</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonumy eirmod tempor invidunt
+                        ut
+                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores
+                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="focus-list">
+                        <h5 class="mb-4">MY FOCUS</h5>
+                        <p>UI/UX Design</p>
+                        <p>Responsive Design</p>
+                        <p>Web Design</p>
+                        <p>Mobile App Design</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>CSS</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>React</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Photoshop</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Adobe XD</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Node.js</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>WordPress</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!--About me Section-->
-
-    <section class="about py-5 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="display-6 mb-4">About me</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy euismod tempor invidunt
-                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
-                        sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy euismod
-                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                        accusam et justo.</p>
-                    <button class="btn btn-dark mt-3">Download Resume</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Skills section-->
-
-    <section class="skills py-5 bg-secondary text-white">
-        <div class="container">
-            <h2 class="text-center display-6 mb-5">Skills</h2>
-            <div class="row mb-4">
-                <div class="col-lg-8 mx-auto">
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy
-                        euismod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
-                        et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-                        est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <h4 class="text-center mb-4"><u>MY FOCUS</u></h4>
-                    <ul class="list-unstyled text-center">
-                        <li class="mb-3">UI/UX Design</li>
-                        <li class="mb-3">Responsive Design</li>
-                        <li class="mb-3">Web Design</li>
-                        <li class="mb-3">Mobile App Design</li>
-                    </ul>
-                </div>
-                <div class="col-md-8">
-                    <div class="skill-bars">
-                        <div class="mb-3">
-
-                            <div class="progress">
-                                <div class="progress-bar bg-light" role="progressbar" style="width: 90%"><span
-                                        class="probar-text">HTML</span></div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="progress">
-                                <div class="progress-bar bg-light" role="progressbar" style="width: 85%"><span
-                                        class="probar-text">CSS</span></div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="progress">
-                                <div class="progress-bar bg-light" role="progressbar" style="width: 80%"><span
-                                        class="probar-text">JavaScript</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="progress">
-                                <div class="progress-bar bg-light" role="progressbar" style="width: 75%"><span
-                                        class="probar-text">React</span></div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="progress">
-                                <div class="progress-bar bg-light" role="progressbar" style="width: 85%"><span
-                                        class="probar-text">Photoshop</span></div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="progress">
-                                <div class="progress-bar bg-light" role="progressbar" style="width: 80%"><span
-                                        class="probar-text">Adobe XD</span></div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="progress">
-                                <div class="progress-bar bg-light" role="progressbar" style="width: 70%"><span
-                                        class="probar-text">Node.js</span></div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="progress">
-                                <div class="progress-bar bg-light" role="progressbar" style="width: 85%"><span
-                                        class="probar-text">WordPress</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- Portfolio Section -->
     <section class="portfolio">
-        <h2>Portfolio</h2>
-        <div class="cards">
-            <div class="card first-row col-one">WEB DESIGN</div>
-            <div class="card first-row col-two">MOBILE DESIGN</div>
-            <div class="card first-row col-one">LOGO DESIGN</div>
-            <div class="card col-two">WEB APPLICATION DEVELOPMENT</div>
-            <div class="card col-one">MOBILE APPLICATION DEVELOPMENT</div>
-            <div class="card col-two">PWA DEVELOPMENT</div>
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="row g-4">
+                <!-- First row -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card first-row col-one">WEB DESIGN</div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card first-row col-two">MOBILE DESIGN</div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card first-row col-one">LOGO DESIGN</div>
+                </div>
+                <!-- Second row -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card col-two">WEB APPLICATION DEVELOPMENT</div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card col-one">MOBILE APPLICATION DEVELOPMENT</div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card col-two">PWA DEVELOPMENT</div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!--Footer Section-->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>GET IN TOUCH</h5>
+                    <p class="mt-4"><i class="fas fa-envelope me-2"></i> kr123@example.com</p>
+                    <p><i class="fas fa-phone me-2"></i> 717-555-1234</p>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <button class="btn btn-dark contact-btn">CONTACT ME</button>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p class="copyright">Copyright © 2019 KR</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
